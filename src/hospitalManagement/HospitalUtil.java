@@ -1,4 +1,5 @@
-import java.sql.SQLOutput;
+package hospitalManagement;
+
 import java.util.Scanner;
 public class HospitalUtil {
     public static void main(String[] args) {
@@ -73,7 +74,7 @@ public class HospitalUtil {
                     System.out.println("patient details updated");
                     break;
                 case 6:
-                    System.out.print("Enter Patient ID to remove: ");
+                    System.out.print("Enter hospitalManagement.Patient ID to remove: ");
                     int removePatientId = scanner.nextInt();
                     hospital.removePatientById(removePatientId);
                     break;
@@ -88,10 +89,10 @@ public class HospitalUtil {
 
                     Doctor updatedDoctorList = new Doctor(updatedDoctorId, updatedname, updatedSpecialization);
                     hospital.addDoctor(updatedDoctorList);
-                    System.out.println("Doctor details updated");
+                    System.out.println("hospitalManagement.Doctor details updated");
                     break;
                 case 8:
-                    System.out.print("Enter Patient ID to remove: ");
+                    System.out.print("Enter hospitalManagement.Patient ID to remove: ");
                     int removeDoctorId = scanner.nextInt();
                     hospital.removeDoctorById(removeDoctorId);
                     break;

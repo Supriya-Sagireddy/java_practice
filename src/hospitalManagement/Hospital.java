@@ -1,5 +1,6 @@
+package hospitalManagement;
+
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 public class Hospital {
     private List<Patient> patientList=new ArrayList<>();
@@ -18,11 +19,11 @@ public class Hospital {
                 patient.setAge(age);
                 patient.setDiagnosis(diagnosis);
                 patient.setName(name);
-                System.out.println("Patient details updated successfully.");
+                System.out.println("hospitalManagement.Patient details updated successfully.");
                 return;
             }
         }
-        System.out.println("Patient with ID " + patientId + " not found.");
+        System.out.println("hospitalManagement.Patient with ID " + patientId + " not found.");
     }
 
     public void updatedDoctorId(int doctorId,String name, String Specialazation){
@@ -30,11 +31,11 @@ public class Hospital {
             if(doctor.getDoctorId()==doctorId){
                 doctor.setName(name);
                 doctor.setSpecialization(Specialazation);
-                System.out.println("Doctor details updated successfully.");
+                System.out.println("hospitalManagement.Doctor details updated successfully.");
                 return;
             }
         }
-        System.out.println("Doctor with ID " + doctorId + " not found.");
+        System.out.println("hospitalManagement.Doctor with ID " + doctorId + " not found.");
     }
     public void displayAllPatients() {
         System.out.println("All Patients:");
@@ -60,10 +61,10 @@ public class Hospital {
         for (Patient patient:patientList){
             if(patient.getPatientId()==patientId){
                 patientList.remove(patient);
-                System.out.println("Patient with ID " + patientId + " removed successfully.");
+                System.out.println("hospitalManagement.Patient with ID " + patientId + " removed successfully.");
                 return;
             }
-            System.out.println("Patient with ID " + patientId + " not found.");
+            System.out.println("hospitalManagement.Patient with ID " + patientId + " not found.");
         }
     }
 
@@ -71,11 +72,11 @@ public class Hospital {
         for(Doctor doctor:doctorList){
             if(doctor.getDoctorId()== DoctorId){
                 doctorList.remove(doctor);
-                System.out.println("Doctor with ID " + DoctorId + " removed successfully.");
+                System.out.println("hospitalManagement.Doctor with ID " + DoctorId + " removed successfully.");
                 return;
             }
         }
-        System.out.println("Doctor with ID " + DoctorId + " not found.");
+        System.out.println("hospitalManagement.Doctor with ID " + DoctorId + " not found.");
     }
 
 

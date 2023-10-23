@@ -1,3 +1,5 @@
+package hospitalManagement;
+
 import java.util.Objects;
 public class Patient {
     private int patientId;
